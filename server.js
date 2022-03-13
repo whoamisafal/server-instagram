@@ -298,11 +298,11 @@ app.post('/activity', AuthenticationToken, (req, res) => {
 
 
 
-app.get('/', AuthenticationToken, async (req, res) => {
+//app.get('/', async (req, res) => {
 
-    return res.send("Home")
+//    return res.send("Home")
 
-})
+//})
 
 
 
@@ -1282,6 +1282,13 @@ app.delete('/delete/post/', AuthenticationToken, async (req, res) => {
 
 
 
+
+/*Test: */
+app.get('/', async (req, res) => {
+
+    res.send("<h1>Hey this is a testing</h1>")
+    res.end()
+})
 
 
 
