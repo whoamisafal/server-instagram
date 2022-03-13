@@ -1286,8 +1286,11 @@ app.delete('/delete/post/', AuthenticationToken, async (req, res) => {
 /*Test: */
 app.get('/', async (req, res) => {
 
-    res.send("<h1>Hey this is a testing</h1>")
-    res.end()
+
+    res.end({
+        message: "Hello World"
+        
+    })
 })
 
 
